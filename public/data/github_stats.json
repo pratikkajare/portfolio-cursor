@@ -1,0 +1,36 @@
+{
+  "public_repos": 10,
+  "followers": 15,
+  "following": 20,
+  "total_stars": 25,
+  "total_forks": 8,
+  "languages": {
+    "JavaScript": 5,
+    "TypeScript": 3,
+    "Python": 2
+  },
+  "top_repos": [
+    {
+      "name": "PratikKajare",
+      "description": "My personal portfolio and profile",
+      "stars": 10,
+      "forks": 3,
+      "url": "https://github.com/pratikkajare/PratikKajare"
+    },
+    {
+      "name": "nestjs-project",
+      "description": "Backend services built with NestJS",
+      "stars": 8,
+      "forks": 2,
+      "url": "https://github.com/pratikkajare/nestjs-project"
+    },
+    {
+      "name": "react-dashboard",
+      "description": "A modern dashboard built with React",
+      "stars": 7,
+      "forks": 3,
+      "url": "https://github.com/pratikkajare/react-dashboard"
+    }
+  ],
+  "last_updated": "2023-06-15T12:00:00Z"
+}
