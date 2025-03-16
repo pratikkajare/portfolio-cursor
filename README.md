@@ -2,6 +2,8 @@
 
 A modern portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
 
+**Live Demo:** [https://developer-pratik-portfolio.netlify.app/](https://developer-pratik-portfolio.netlify.app/)
+
 ## Features
 
 - Modern, responsive design
