@@ -1,4 +1,4 @@
-# Pratik Kajare's Portfolio
+# My Portfolio
 
 A modern portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
 
