@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+// Remove unused Image import
+// import Image from 'next/image';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import GitHubStats from './GitHubStats';
@@ -9,6 +10,7 @@ import ExperienceTimeline from './ExperienceTimeline';
 import BlogPosts from './BlogPosts';
 import Testimonials from './Testimonials';
 import ContactForm from './ContactForm';
+import Utilities from './Utilities';
 
 export default function AnimatedPortfolio() {
   return (
@@ -250,6 +252,22 @@ export default function AnimatedPortfolio() {
             Blog & Articles
           </motion.h2>
           <BlogPosts />
+        </div>
+      </section>
+
+      {/* Utilities Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-5xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold mb-8 text-center"
+          >
+            Useful Utilities
+          </motion.h2>
+          <Utilities />
         </div>
       </section>
 

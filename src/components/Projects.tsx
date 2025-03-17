@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+// Remove the Next.js Image import
+// import Image from 'next/image';
 import Link from 'next/link';
 
 const projects = [
@@ -52,12 +53,11 @@ const Projects = () => {
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
               >
-                <div className="relative h-48">
-                  <Image
+                <div className="relative h-48 overflow-hidden">
+                  <img
                     src={project.image}
                     alt={project.title}
-                    fill
-                    style={{ objectFit: 'cover' }}
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">

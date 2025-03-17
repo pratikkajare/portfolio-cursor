@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 interface Testimonial {
   name: string;
@@ -70,12 +69,11 @@ export default function Testimonials() {
               >
                 <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
                   <div className="flex items-center mb-6">
-                    <div className="relative h-14 w-14 rounded-full overflow-hidden mr-4">
-                      <Image
+                    <div className="h-14 w-14 rounded-full overflow-hidden mr-4">
+                      <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
-                        fill
-                        style={{ objectFit: 'cover' }}
+                        className="h-full w-full object-cover"
                       />
                     </div>
                     <div>

@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 
 interface BlogPost {
   title: string;
@@ -56,13 +55,11 @@ export default function BlogPosts() {
             whileHover={{ y: -5 }}
             className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg"
           >
-            <div className="relative h-48 w-full">
-              <Image
+            <div className="relative h-48 w-full overflow-hidden">
+              <img
                 src={post.imageUrl}
                 alt={post.title}
-                fill
-                style={{ objectFit: 'cover' }}
-                className="transition-transform duration-300 hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
 
